@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title>
+    <style>
+        /* Estilos Generales */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; background-color: #f4f4f4; }
+
+        /* Navegación */
+        nav { background: #2c3e50; color: #fff; padding: 1rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        nav a:hover { color: #3498db; }
+
+        /* Hero Section */
+        .hero { 
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.5rem; margin-bottom: 20px; }
+
+        /* Contenido */
+        .container { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
+        .btn { display: inline-block; background: #3498db; color: #fff; padding: 10px 20px; border-radius: 5px; text-decoration: none; }
+        .btn:hover { background: #2980b9; }
+
+        /* Footer */
+        footer { background: #333; color: #fff; text-align: center; padding: 2rem; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">MiProyecto</div>
+        <div class="menu">
+            <a href="#">Inicio</a>
+            <a href="#acerca">Acerca de</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>¡Hola y Bienvenido!</h1>
+        <p>Estás en la página principal de nuestro nuevo proyecto.</p>
+        <a href="#acerca" class="btn">Saber más</a>
+    </header>
+
+    <main class="container">
+        <section id="acerca">
+            <h2>Sobre nosotros</h2>
+            <p>Este es un ejemplo de un archivo <strong>index.html</strong> profesional. Aquí puedes añadir información sobre quién eres, qué haces o qué servicios ofreces.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Sergio Navarro</p>
+    </footer>
+
+</body>
+</html>
